@@ -4,12 +4,10 @@ import jakarta.persistence.*;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
-import lombok.Getter;
 import org.phonebook.phonebook.model.Contact;
 
 import java.util.List;
 
-@Getter
 public class MySQLController implements JDBCController {
     private final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("phonebook");
     private final EntityManager entityManager = entityManagerFactory.createEntityManager();

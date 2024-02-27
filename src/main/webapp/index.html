@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Phone Book</title>
 </head>
 <body onload="getContacts()">
-<h1>Phone Book</h1>
-<form id="submit">
-    <label for="name">Name:</label><input id="name" type="text">
-    <label for="number">Number:</label><input id="number" type="text">
-    <button onclick="addNewContact()" type="submit">Add</button>
-</form>
-<ul id="contactsList">
-</ul>
+<div class="container">
+    <h1 class="title">Phone Book</h1>
+    <form id="submit" class="form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" class="input" required>
+        <label for="number">Number:</label>
+        <input id="number" type="text" class="input" required>
+        <button type="submit" class="button">Add</button>
+    </form>
+    <ul id="contactsList" class="contacts-list">
+    </ul>
+</div>
 </body>
 </html>
